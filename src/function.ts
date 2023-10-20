@@ -79,3 +79,31 @@ const sumAll =(a:number,...nums:number[])=>{
 logMsg(sumAll(1,3,5))
 
 // never Type defination
+
+const createError =(errMsg: string):never=>{
+    throw new Error(errMsg);
+    
+}
+
+const infinite =()=>{
+    let i: number = 1;
+    while(true){
+        i++
+       if (i>100) break 
+    }
+}
+
+// custom type guard
+const isNumber =(value:any):boolean=>{
+    return typeof value ==='number'
+    ? true:false;
+}
+
+// use of never type
+const stringAndNumber =(value:number|string):string=>{
+    if(typeof value ==='string') return "string";
+    if(isNumber(value)) return "number";
+    return createError('This Should Never Happened!')
+}
+
+logMsg(stringAndNumber("Hay Hay"))
