@@ -35,6 +35,11 @@ let exmpleObj = {
     prop1: "Maksud",
     prop2: true
 };
+// type Guiterist ={
+//     name ?: string,
+//     isActive: boolean,
+//     albums: (string|number)[]
+// }
 let evh = {
     name: "Maksud",
     isActive: false,

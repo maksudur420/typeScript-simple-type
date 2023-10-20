@@ -62,11 +62,11 @@ let exmpleObj ={
 }
 
 
-type Guiterist ={
-    name ?: string,
-    isActive: boolean,
-    albums: (string|number)[]
-}
+// type Guiterist ={
+//     name ?: string,
+//     isActive: boolean,
+//     albums: (string|number)[]
+// }
 
 
 let evh : Guiterist ={
